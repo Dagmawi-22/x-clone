@@ -8,10 +8,17 @@ import {
   IoPlayForward,
 } from "react-icons/io5";
 
+export const HeaderTop = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 12vw;
+`;
+
 export const IndexPageContainer = styled.div`
   height: 100vh;
   width: 100vw;
-  padding: 95px;
+  padding: 0px 95px;
   background-color: #000;
   background-size: cover;
   background-position: center;
@@ -64,12 +71,37 @@ export const PostBtn = styled.div`
 
 export const IndexPageContent = styled.div`
   padding: 20px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+export const MidContent = styled.div`
+  padding: 0px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 40px;
 `;
 
 export const HeaderContainer = styled.div`
   display: flex;
   gap: 8px;
   padding: 16px;
+`;
+
+export const White = styled.div`
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
+  border: 1px solid gray;
+  padding: 17px 25px;
+`;
+
+export const HorizontalLine = styled.div`
+  border-bottom: 1px solid red;
+  margin: 10px 0;
 `;
 
 export const HeaderHeading = styled.h1`
