@@ -29,17 +29,37 @@ export const Navbar = styled.div`
 export const Menu = styled.div`
   display: flex;
   flex-direction: row;
+  gap: 15px;
+  font-size: 22px;
   color: #fff;
 `;
 
-export const PostBtn = styled.div`
+export const Badge = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const BadgeNumber = styled.div`
+  margin-top: -21px;
+  font-size: 10px;
+  margin-left: -10px;
   background-color: #1da1f2;
-  padding: 6px 15px;
-  border-radius: 15px;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: circle();
+`;
+
+export const PostBtn = styled.div`
+  padding: 12px 15px;
+  border-radius: 25px;
   color: #fff;
+  background-color: #1da1f2;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 `;
 
 export const IndexPageContent = styled.div`
