@@ -39,6 +39,7 @@ export const Menu = styled.div`
   gap: 15px;
   font-size: 22px;
   color: #fff;
+  cursor: pointer;
 `;
 
 export const Badge = styled.div`

@@ -32,7 +32,7 @@ const SideMenu = () => {
           <IoNotificationsOutline />
           <BadgeNumber>42</BadgeNumber>
         </Badge>
-        Notifications
+        <span style={{ marginLeft: -10 }}>Notifications</span>
       </Menu>
       <Menu>
         <MdOutlineEmail />
