@@ -8,12 +8,15 @@ import {
   IoPlayForward,
 } from "react-icons/io5";
 
-export const HeaderTop = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 12vw;
+export const BlueBorderBottom = styled.a`
+  color: #fff;
+  border-bottom: 14px solid #1da1f2;
+  text-decoration: none; /* To remove underline */
+  padding-bottom: 12px; /* Adjust spacing */
+  cursor: pointer; /* Add pointer cursor */
 `;
+
+export const HeaderTop = styled.div``;
 
 export const IndexPageContainer = styled.div`
   height: 100vh;
@@ -31,6 +34,7 @@ export const Navbar = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  overflow-y: hidden;
 `;
 
 export const Menu = styled.div`
@@ -96,8 +100,15 @@ export const White = styled.div`
   display: flex;
   flex-direction: row;
   gap: 10vw;
-  border: 1px solid gray;
-  padding: 17px 25px;
+  border-bottom: 1px solid gray;
+  border-top: none;
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
+  padding: 10px 10px 0px 70px; /* Padding for top only */
+  position: fixed;
+  top: 0;
+  width: auto;
+  z-index: 999; /* Ensure the component is above other elements */
 `;
 
 export const HorizontalLine = styled.div`
