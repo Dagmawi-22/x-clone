@@ -10,18 +10,33 @@ import {
 
 export const BlueBorderBottom = styled.a`
   color: #fff;
-  border-bottom: 14px solid #1da1f2;
+  border-bottom: 24px solid #1da1f2;
   text-decoration: none; /* To remove underline */
   padding-bottom: 12px; /* Adjust spacing */
   cursor: pointer; /* Add pointer cursor */
 `;
 
-export const HeaderTop = styled.div``;
+export const WhatUp = styled.div`
+  color: #fff;
+  height: 100px;
+  max-width: 100%;
+  background-color: orange;
+`;
+
+export const HeaderTop = styled.div`
+  width: 500px;
+`;
+
+export const FlexVertical = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+`;
 
 export const IndexPageContainer = styled.div`
   height: 100vh;
   width: 100vw;
-  padding: 0px 95px;
+  padding: 2px 15vw;
   background-color: #000;
   background-size: cover;
   background-position: center;
@@ -83,16 +98,13 @@ export const IndexPageContent = styled.div`
 
 export const MidContent = styled.div`
   padding: 0px 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin-left: 40px;
 `;
 
 export const HeaderContainer = styled.div`
   display: flex;
   gap: 8px;
-  padding: 16px;
+  padding: 36px;
 `;
 
 export const White = styled.div`
@@ -112,8 +124,8 @@ export const White = styled.div`
 `;
 
 export const HorizontalLine = styled.div`
-  border-bottom: 1px solid red;
-  margin: 10px 0;
+  border-bottom: 1px solid gray;
+  margin: 3px 0;
 `;
 
 export const HeaderHeading = styled.h1`

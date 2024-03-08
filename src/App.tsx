@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {
+  FlexVertical,
   HorizontalLine,
   IndexPageContainer,
   IndexPageContent,
@@ -8,6 +9,7 @@ import Logo from "./components/Logo";
 import SideMenu from "./components/Nav";
 import HeaderTab from "./components/HeaderTab";
 import Mid from "./components/MidSection";
+import WhatsUp from "./components/WhatsUp";
 
 const App = () => {
   return (
@@ -15,8 +17,10 @@ const App = () => {
       <IndexPageContent>
         <SideMenu />
         <Mid>
+          {/* <FlexVertical> */}
           <HeaderTab />
-          <HorizontalLine></HorizontalLine>
+          <WhatsUp />
+          {/* </FlexVertical> */}
         </Mid>
       </IndexPageContent>
     </IndexPageContainer>

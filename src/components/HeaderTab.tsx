@@ -1,6 +1,12 @@
 import React, { useState } from "react";
-import { BlueBorderBottom, HeaderTop, White } from "../styles/styled";
+import {
+  BlueBorderBottom,
+  FlexVertical,
+  HeaderTop,
+  White,
+} from "../styles/styled";
 import { IoSettingsOutline } from "react-icons/io5";
+import WhatsUp from "./WhatsUp";
 
 const HeaderTab = () => {
   // State to track the active tab
