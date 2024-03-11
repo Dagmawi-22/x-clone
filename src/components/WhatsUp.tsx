@@ -1,6 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { IoMdGlobe } from "react-icons/io";
+import { FaImage } from "react-icons/fa";
+import { MdOutlineGifBox } from "react-icons/md";
+import { CiSliderHorizontal } from "react-icons/ci";
+import { BsEmojiSmile } from "react-icons/bs";
+import { AiOutlineSchedule } from "react-icons/ai";
+import { IoLocationOutline } from "react-icons/io5";
 
 const Container = styled.div`
   background-color: transparent;
@@ -9,6 +15,19 @@ const Container = styled.div`
   padding: 16px;
   margin-top: 20px;
   width: 500px;
+`;
+
+const Icon = styled.span`
+  color: #1da1f2;
+  cursor: pointer;
+`;
+
+const Post = styled.span`
+  background-color: #1da1f2;
+  color: #fff;
+  padding: 6px 15px;
+  border-radius: 18px;
+  cursor: pointer;
 `;
 
 const Avatar = styled.img`
@@ -26,6 +45,7 @@ const InputWrapper = styled.div`
 const FlexHorizontal = styled.div`
   display: flex;
   flex-direction: row;
+  gap: 15px;
 `;
 
 const Input = styled.textarea`
@@ -64,6 +84,18 @@ export const PublicText = styled.span`
   margin-top: -20px;
 `;
 
+const HorizontalSpaceBetwwen = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 35px;
+`;
+
+const FlexVertical = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const WhatsUp = () => {
   return (
     <Container>
@@ -74,10 +106,39 @@ const WhatsUp = () => {
         />
         <Input placeholder="What is happening?!" rows={4} />
       </InputWrapper>
-      <FlexHorizontal>
-        <PublicIcon />
-        <PublicText>Everyone can reply</PublicText>
-      </FlexHorizontal>
+
+      <div>
+        <FlexHorizontal>
+          <PublicIcon />
+          <PublicText>Everyone can reply</PublicText>
+        </FlexHorizontal>
+      </div>
+
+      <div>
+        <HorizontalSpaceBetwwen>
+          <FlexHorizontal style={{ marginLeft: "40px" }}>
+            <Icon>
+              <FaImage />
+            </Icon>
+            <Icon>
+              <MdOutlineGifBox />
+            </Icon>
+            <Icon>
+              <CiSliderHorizontal />
+            </Icon>
+            <Icon>
+              <BsEmojiSmile />
+            </Icon>
+            <Icon>
+              <AiOutlineSchedule />
+            </Icon>
+            <Icon>
+              <IoLocationOutline />
+            </Icon>
+          </FlexHorizontal>
+          <Post>Post</Post>
+        </HorizontalSpaceBetwwen>
+      </div>
     </Container>
   );
 };
